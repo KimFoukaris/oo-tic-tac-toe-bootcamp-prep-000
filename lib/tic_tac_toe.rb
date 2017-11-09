@@ -76,4 +76,14 @@ def won?
     false
   end
 end
+
+def full?
+  @board.none?{|location| location == " "}
+end
+
+def draw?
+  if (!won?(@board) && full?(@board))
+    true
+  end
+end
 end
