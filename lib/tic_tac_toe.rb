@@ -64,9 +64,9 @@ def won?
     win_index_1 = combo[0]
     win_index_2 = combo[1]
     win_index_3 = combo[2]
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
+    position_1 = @board[win_index_1]
+    position_2 = @board[win_index_2]
+    position_3 = @board[win_index_3]
     if ((position_1 == "X" && position_2 == "X" and position_3 == "X") || (position_1 == "O" && position_2 == "O" and position_3 == "O"))
       win = [win_index_1, win_index_2, win_index_3]
       return win
