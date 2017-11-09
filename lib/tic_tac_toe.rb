@@ -86,4 +86,17 @@ def draw?
     true
   end
 end
+
+def over?
+ if (won? || full? || draw?)
+   true
+ end
+end
+
+def winner
+ if (won?)
+   index = won?[1]
+   return @board[index]
+ end
+end
 end
