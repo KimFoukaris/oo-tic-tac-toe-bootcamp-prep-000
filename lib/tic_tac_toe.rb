@@ -4,4 +4,3 @@ class TicTacToe
     end
 
 end
-
