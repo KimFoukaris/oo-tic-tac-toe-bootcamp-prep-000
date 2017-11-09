@@ -99,4 +99,15 @@ def winner
    return @board[index]
  end
 end
+
+def play
+  until(over?)
+    turn
+  end
+  if (won?)
+    puts "Congratulations #{winner}!"
+  elsif (full?)
+    puts "Cat's Game!"
+  end
+end
 end
